@@ -11,7 +11,7 @@ import re
 import sys
 from mdict_query import IndexBuilder
 import configparser
-import winsound         # for sound  
+#import winsound         # for sound  
 #import time             # for sleep
 import os
 
@@ -77,9 +77,10 @@ if __name__ == '__main__':
     try:
         result = invoke('addNote',note=newnote)
         print(result)
-        winsound.Beep(440, 250) # frequency, duration
+#        winsound.Beep(440, 250) # frequency, duration
     except:
-        winsound.Beep(600, 250)
+        pass
+#        winsound.Beep(600, 250)
     
     
 #    w=WindowsBalloonTip("Note Added", result)
